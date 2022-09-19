@@ -1,0 +1,30 @@
+#
+# Container Image Distribution
+#
+
+version: 0.1
+
+log:
+  level: warn
+  formatter: json
+
+http:
+  addr: :443
+  tls:
+    certificate: /usr/local/etc/distribution/tls-cer.pem
+    key: /usr/local/etc/distribution/tls-key.pem
+  headers:
+    x-content-type-options: [nosniff]
+
+storage:
+  cache:
+    blobdescriptor: inmemory
+  filesystem:
+    rootdirectory: /usr/local/var/lib/distribution
+
+health:
+  storagedriver:
+    enabled: true
+
+delete:
+  enabled: true

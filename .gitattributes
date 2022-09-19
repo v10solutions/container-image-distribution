@@ -1,0 +1,7 @@
+#
+# Container Image Distribution
+#
+
+etc/distribution/ca.pem binary
+etc/distribution/tls-cer.pem binary
+etc/distribution/tls-key.pem binary

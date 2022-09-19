@@ -1,0 +1,10 @@
+#
+# Container Image Distribution
+#
+
+.nova/
+.vscode/
+*.env
+**/.DS_Store
+
+.output/

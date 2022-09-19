@@ -1,0 +1,13 @@
+#
+# Container Image Distribution
+#
+
+.git/
+.gitignore
+.gitmodules
+.gitattributes
+
+.nova/
+.vscode/
+*.env
+**/.DS_Store
